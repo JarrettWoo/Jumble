@@ -6,5 +6,5 @@ jumble_word = input("Enter jumbled word: ")
 possible_words = list(map("".join, permutations(jumble_word)))
 
 for i in possible_words:
-    if i in words:
-        print(i)
+    if i.lower() in words:
+        print(i.lower())
